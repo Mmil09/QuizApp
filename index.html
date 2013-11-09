@@ -6,31 +6,40 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="jquery.animate-shadow-min.js"></script>
 	<script type='text/javascript' src='script.js'></script>
 	<title>Quiz App by Michael Miller</title> 
 </head>
 
 <body>
+
 <div id="container">
+<h1>Strange Animals Quiz</h1>
 
-
-<div id="form-area">
+<div id="nav-area">
+	<div id="box"></div>
+	<div id="nav-buttons">
+	<div id="previous" class="nav-button">previous</div>
+	<div id="next" class="nav-button">next</div>
+	</div>
+	<div id="score-box"><label id="score-label">Score:</label><label id="score"></label></div>	
+	<div id="feedback-area" class="area"><p id="feedback">Select the correct answer, then hit the submit button.</p></div>
+</div>
+<div id="form-area" class="area">
 	<form name="quiz">
 		<label id="question"></label>
 		<div id="choices"></div>
 		<input type="button" value="Submit" id="submit">
+		<label id = "statusBox"></label>
+		
 	</form>
 </div>
 
-<div id="picture-area"></div>
+<div id="picture-area" class="area"><div class="picture"></div></div>
 
-<div id="nav-area">
-	
-	<div id="nav-buttons">
-	<div id="previous" class="nav-button">previous</div>
-	<div id="next" class="nav-button">next</div>	
-	</div>
-</div>
+
+
+
 
 </div>
 
