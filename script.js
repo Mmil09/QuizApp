@@ -85,7 +85,6 @@ var checkAnswer = function() {
 	correct = questions[qNum].correct; 
 	answered = questions[qNum].answered; 
 	result = questions[qNum].result;
-	// console.log(qNum + " " + answered);
 
 	if (answered) {alert("You have already answered the question")}
 	else {
@@ -111,7 +110,6 @@ var checkAnswer = function() {
 	questionsAnswered++; // add one to the counter variable 'questionsAnswered'
 		}
 	response = null; //reset 'response' so it does not carry over to the next question
-	// console.log(questions[0].answered);
 	loadQuestionsChoices();
 	}
 }	
